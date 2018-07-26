@@ -1,3 +1,2 @@
-
-web: gunicorn djangotest.wsgi
+web: gunicorn --pythonpath="$PWD/djangotest" djangotest.wsgi
 
